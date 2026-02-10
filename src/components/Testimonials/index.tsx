@@ -5,28 +5,25 @@ import SingleTestimonial from "./SingleTestimonial";
 const testimonialData: Testimonial[] = [
   {
     id: 1,
-    name: "Noureddine B.",
-    designation: "Responsable RH ",
-    content:
-      "Avant TotalPaie, nous faisions la paie sur Excel avec beaucoup d’erreurs et de pertes de temps. Aujourd’hui, le pointage et les bulletins sont centralisés, et la clôture de paie est passée de plusieurs jours à quelques heures.",
+    name: "Karim M.",
+    designation: "Expert-comptable, Cabinet Alger",
+    content: "Avant TOTALFisc, nous passions des heures sur Excel pour préparer les G50 de nos clients. Maintenant, tout est automatisé : comptabilité, factures, TVA et exports DGI. Un gain de temps énorme pour notre cabinet.",
     image: "/images/testimonials/author-01.png",
     star: 5,
   },
   {
     id: 2,
-    name: "Samira K.",
-    designation: "DRH ",
-    content:
-      "Nous gérons plusieurs établissements avec des horaires différents. TotalPaie nous permet de suivre les présences, les heures supplémentaires et les absences par site, tout en gardant une vue consolidée pour la direction.",
+    name: "Amina B.",
+    designation: "Responsable comptable, PME industrielle",
+    content: "TOTALFisc nous a permis de centraliser la comptabilité, les factures avec Timbre Fiscal et les déclarations fiscales. L'interface est moderne et le support très réactif. Indispensable pour rester conforme.",
     image: "/images/testimonials/author-02.png",
     star: 5,
   },
   {
     id: 3,
-    name: "Mohamed L.",
-    designation: "Directeur administratif et financier",
-    content:
-      "Les exports paie et les rapports sont très utiles pour la comptabilité et le pilotage de la masse salariale. Nous avons une meilleure visibilité sur les coûts et sur l’absentéisme dans l’entreprise.",
+    name: "Rachid L.",
+    designation: "Directeur financier, Groupe commercial",
+    content: "Nous gérons plusieurs sociétés avec TOTALFisc. La consolidation comptable et la génération automatique des rapports fiscaux nous font gagner plusieurs jours par mois. Et le module paie est un vrai plus.",
     image: "/images/testimonials/author-03.png",
     star: 5,
   },
@@ -38,8 +35,8 @@ const Testimonials = () => {
       <div className="container px-4">
         <SectionTitle
           subtitle="Témoignages clients"
-          title="Ils utilisent déjà TotalPaie"
-          paragraph="Des responsables RH, directeurs financiers et dirigeants font confiance à TotalPaie pour sécuriser la paie, le pointage et les dossiers RH de leurs équipes."
+          title="Des experts-comptables et entreprises nous font confiance"
+          paragraph="Des cabinets d'expertise comptable, directeurs financiers et responsables comptables utilisent TOTALFisc pour automatiser leur comptabilité, facturation et conformité fiscale en Algérie."
           width="640px"
           center
         />

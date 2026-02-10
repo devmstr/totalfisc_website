@@ -1,47 +1,46 @@
 import { Feature } from "@/types/feature";
 import {
-  Clock10Icon,
-  FileTextIcon,
-  FolderArchive,
-  FolderOpen,
-  Wallet,
+  Calculator,
+  FileText,
+  FileBarChart,
+  Users,
 } from "lucide-react";
 const featuresData: Feature[] = [
   {
     id: 1,
-    icon: <Wallet className="h-8 w-8 text-white" />,
-    title: "Paie automatisée et fiable",
+    icon: <Calculator className="h-8 w-8 text-white" />,
+    title: "Comptabilité conforme SCF",
     paragraph:
-      "Générez les bulletins de paie, primes, heures supplémentaires et retenues en quelques clics, avec des règles de calcul configurables pour votre entreprise.",
-    btn: "Découvrir la paie",
-    btnLink: "/#features-paie",
+      "Moteur comptable double-partie avec plan comptable SCF, comptes semi-auxiliaires (clients/fournisseurs), journaux d'achat/vente/banque, balance générale, bilan et compte de résultat.",
+    btn: "Découvrir la comptabilité",
+    btnLink: "/#features-compta",
   },
   {
     id: 2,
-    icon: <Clock10Icon className="h-8 w-8 text-white" />,
-    title: "Pointage et contrôle des présences",
+    icon: <FileText className="h-8 w-8 text-white" />,
+    title: "Facturation et gestion commerciale",
     paragraph:
-      "Connectez vos pointeuses biométriques, suivez les entrées/sorties, retards, absences et validez les heures supplémentaires avec un workflow clair.",
-    btn: "Voir le pointage",
-    btnLink: "/#features-pointage",
+      "Création de factures personnalisables, extraction OCR des factures scannées, calcul automatique du Timbre Fiscal (≥10,000 DZD), multi-devises, suivi des paiements et relances.",
+    btn: "Voir la facturation",
+    btnLink: "/#features-facturation",
   },
   {
     id: 3,
-    icon: <FolderOpen className="h-8 w-8 text-white" />,
-    title: "Dossiers RH et documents",
+    icon: <FileBarChart className="h-8 w-8 text-white" />,
+    title: "Déclarations fiscales automatisées",
     paragraph:
-      "Centralisez contrats, pièces d’identité, documents légaux et modèles, avec alertes sur les dates d’expiration et préparation à la signature électronique.",
-    btn: "Gérer les dossiers RH",
-    btnLink: "/#features-documents",
+      "Génération automatique du rapport G50 mensuel (DGI), déclarations TVA avec TVA collectée/déductible, préparation de la Liasse Fiscale annuelle, exports conformes aux formats officiels.",
+    btn: "Explorer la conformité fiscale",
+    btnLink: "/#features-fiscal",
   },
   {
     id: 4,
-    icon: <FileTextIcon className="h-8 w-8 text-white" />,
-    title: "Rapports, conformité et multi‑sites",
+    icon: <Users className="h-8 w-8 text-white" />,
+    title: "Paie, RH et pointage intégrés",
     paragraph:
-      "Suivez les indicateurs de paie et de présence, exportez en Excel/PDF et gérez plusieurs sites ou sociétés avec des droits d’accès adaptés à chaque rôle.",
-    btn: "Explorer les rapports",
-    btnLink: "/#features-rapports",
+      "Module complet de gestion de la paie (bulletins, cotisations CNAS), dossiers RH numériques, intégration biométrique pour le pointage, planning et gestion des absences — le tout synchronisé avec la comptabilité.",
+    btn: "Gérer la paie & RH",
+    btnLink: "/#features-rh",
   },
 ];
 

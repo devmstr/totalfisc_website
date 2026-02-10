@@ -13,27 +13,46 @@ const About = () => {
             <div className="w-full px-4 lg:w-1/2">
               <div className="mb-12 max-w-[540px] lg:mb-0">
                 <h2 className="mb-5 text-3xl font-bold leading-tight text-dark dark:text-white sm:text-[40px] sm:leading-[1.2]">
-                  La plateforme paie & RH pensée pour les entreprises
-                  algériennes
+                  Une solution comptable pensée pour l'Algérie
                 </h2>
-                <p className="mb-10 text-base leading-relaxed text-body-color dark:text-dark-6">
-                  TotalPaie aide les PME, usines et groupes multi‑sites à
-                  centraliser la paie, le pointage et les dossiers RH dans une
-                  seule application sécurisée. Fini les fichiers Excel
-                  éparpillés, les erreurs de calcul et le manque de visibilité
-                  sur vos équipes.
+                <p className="mb-8 text-base leading-relaxed text-body-color dark:text-dark-6">
+                  TOTALFisc est une plateforme comptable moderne conçue
+                  spécifiquement pour répondre aux exigences du référentiel SCF
+                  algérien et aux obligations de la DGI. Fini les rapports G50
+                  manuels, la comptabilité sur Excel et les calculs de TVA
+                  complexes qui font perdre un temps précieux.
                   <br /> <br />
-                  De la collecte du pointage à la génération des bulletins, en
-                  passant par les contrats, les absences et les rapports, chaque
-                  étape est structurée pour respecter vos règles internes et les
-                  exigences légales locales.
+                  Grâce à notre architecture axée sur la conformité, TOTALFisc
+                  automatise vos déclarations fiscales, gère votre facturation avec
+                  Timbre Fiscal et centralise vos journaux comptables dans une
+                  interface sécurisée et intuitive.
                 </p>
+
+                <div className="mb-10">
+                  <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                    {[
+                      "Comptabilité conforme SCF",
+                      "G50, TVA et Liasse Fiscale",
+                      "Facturation & Timbre Fiscal",
+                      "Multi-sociétés (Cabinets)",
+                      "Paie et RH intégrés",
+                      "Interface bilingue & Cloud",
+                    ].map((item, idx) => (
+                      <li key={idx} className="flex items-center text-body-color dark:text-dark-6">
+                        <span className="mr-2 flex h-5 w-5 items-center justify-center rounded-full bg-primary text-[10px] text-white">
+                          ✓
+                        </span>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
 
                 <Link
                   href="/demo"
                   className="inline-flex items-center justify-center rounded-md bg-primary px-7 py-3 text-center text-base font-medium text-white duration-300 hover:bg-primary/90"
                 >
-                  Découvrir TotalPaie
+                  Découvrir TOTALFisc
                 </Link>
               </div>
             </div>
@@ -46,7 +65,7 @@ const About = () => {
                   >
                     <Image
                       src="/images/about/sidebar.png"
-                      alt="TotalPaie – vue tableau de bord paie et présences"
+                      alt="TOTALFisc – vue tableau de bord comptabilité et journaux"
                       // fill
                       width={1368}
                       height={2292}
@@ -59,7 +78,7 @@ const About = () => {
                   <div className="relative mb-4 h-full w-full overflow-hidden sm:mb-8 sm:h-[220px] md:h-[346px] lg:mb-4 lg:h-[225px] xl:mb-8 xl:h-[310px]">
                     <Image
                       src="/images/about/sidebar-attendance.png"
-                      alt="TotalPaie – gestion des employés et dossiers RH"
+                      alt="TOTALFisc – gestion de la facturation et TVA"
                       width={1368}
                       height={1420}
                       className="absolute left-1/2 top-[67%] h-[250%] w-full -translate-x-1/2 -translate-y-1/2"
@@ -73,10 +92,10 @@ const About = () => {
                         100%
                       </span>
                       <span className="block text-base font-semibold text-white">
-                        Paie et pointage
+                        Conformité SCF & DGI
                       </span>
                       <span className="block text-base font-medium text-white text-opacity-70">
-                        Centralisés dans une seule plateforme
+                        Automatisez vos rapports fiscaux en toute sérénité
                       </span>
                     </div>
                     <div>

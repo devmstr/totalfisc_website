@@ -8,8 +8,8 @@ const Faq = () => {
       <div className="container">
         <SectionTitle
           subtitle="FAQ"
-          title="Questions fréquentes sur TotalPaie"
-          paragraph="Voici les réponses aux questions les plus fréquentes sur la mise en place, l’utilisation quotidienne et la sécurité de TotalPaie."
+          title="Questions fréquentes sur TOTALFisc"
+          paragraph="Voici les réponses aux questions les plus fréquentes sur la mise en place, la conformité SCF et l'utilisation de TOTALFisc."
           width="640px"
           center
         />
@@ -17,31 +17,31 @@ const Faq = () => {
         <div className="-mx-4 mt-[60px] flex flex-wrap lg:mt-20">
           <div className="w-full px-4 lg:w-1/2">
             <SingleFaq
-              question="Comment se déroule la mise en place de TotalPaie dans mon entreprise ?"
-              answer="Après la création de votre compte, nous configurons avec vous les structures (sites, services), les profils salariés, les contrats et les règles de paie. Une phase d’accompagnement permet d’importer vos données actuelles et de valider un premier cycle de paie test avant de passer en production."
+              question="TOTALFisc est-il conforme au référentiel SCF algérien ?"
+              answer="Oui, TOTALFisc est entièrement conçu pour respecter le Système Comptable Financier (SCF) algérien : plan comptable conforme, comptes semi-auxiliaires, double-partie, et exports compatibles DGI."
             />
             <SingleFaq
-              question="Est-ce que TotalPaie gère le pointage avec des pointeuses biométriques ?"
-              answer="Oui. TotalPaie permet de connecter vos pointeuses biométriques ou d’importer les fichiers de pointage. Les heures de présence, retards, absences et heures supplémentaires sont consolidées pour alimenter automatiquement la paie après validation par les responsables."
+              question="Comment fonctionne la génération automatique du G50 ?"
+              answer="TOTALFisc collecte automatiquement vos ventes et achats avec la TVA, calcule la TVA collectée et déductible, puis génère le rapport G50 au format officiel requis par la DGI (Direction Générale des Impôts)."
             />
             <SingleFaq
-              question="Peut-on gérer plusieurs sites ou sociétés dans TotalPaie ?"
-              answer="TotalPaie est conçu pour les groupes multi‑sites et multi‑sociétés. Vous pouvez séparer les établissements, rattacher les salariés à chaque entité et garder une vue consolidée pour la direction RH et financière."
+              question="Puis-je utiliser TOTALFisc pour plusieurs sociétés (cabinet comptable) ?"
+              answer="Oui, les plans PROFESSIONAL et CABINET permettent de gérer entre 5 et 100+ sociétés dans une seule interface, avec des droits d'accès par client et une vue consolidée pour le cabinet."
             />
           </div>
 
           <div className="w-full px-4 lg:w-1/2">
             <SingleFaq
-              question="Comment sont protégées les données de paie et des salariés ?"
-              answer="Les données sont stockées de manière sécurisée, avec des accès protégés par authentification et des droits par rôle (RH, managers, direction). Les actions sensibles sont tracées et des sauvegardes régulières sont mises en place pour garantir la disponibilité de vos informations."
+              question="Le Timbre Fiscal est-il calculé automatiquement ?"
+              answer="Oui, TOTALFisc applique automatiquement le Timbre Fiscal sur les factures ≥10,000 DZD selon la réglementation algérienne, et l'intègre dans vos déclarations fiscales."
             />
             <SingleFaq
-              question="Les règles de paie peuvent-elles être adaptées à notre convention et à nos pratiques ?"
-              answer="Oui. Les règles de calcul des bulletins (primes, heures supplémentaires, retenues, avances, prêts…) sont paramétrables pour refléter vos pratiques internes et les contraintes réglementaires locales. Une phase de cadrage permet d’ajuster le paramétrage à votre contexte."
+              question="Est-ce que le module paie est inclus ?"
+              answer="Le module paie est disponible dans les plans PROFESSIONAL (jusqu'à 50 employés) et CABINET (illimité). Il inclut les bulletins de paie, cotisations CNAS, gestion des absences et pointage biométrique."
             />
             <SingleFaq
-              question="Quel type d’accompagnement et de support est proposé ?"
-              answer="Selon le pack choisi, vous bénéficiez d’un onboarding pour la configuration initiale, de sessions de formation pour les équipes RH et managers, ainsi que d’un support continu par email et visio pour répondre aux questions et traiter les demandes d’évolution."
+              question="TOTALFisc gère-t-il l'OCR des factures ?"
+              answer="Oui, vous pouvez scanner ou uploader vos factures fournisseurs, et TOTALFisc extrait automatiquement les données (montant, TVA, tiers) pour les intégrer dans votre comptabilité."
             />
           </div>
         </div>

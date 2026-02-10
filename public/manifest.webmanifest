@@ -1,7 +1,7 @@
 {
-  "name": "TotalPaie - Plateforme de paie et RH",
-  "short_name": "TotalPaie",
-  "description": "TotalPaie aide les entreprises et groupes en Algérie à centraliser la paie, le pointage et les dossiers RH dans une seule plateforme sécurisée.",
+  "name": "TOTALFisc - Comptabilité et Fiscalité Algérie",
+  "short_name": "TOTALFisc",
+  "description": "TOTALFisc est la solution SaaS de référence pour les cabinets comptables et PME algériennes : comptabilité conforme SCF, facturation et fiscalité.",
   "lang": "fr",
   "dir": "ltr",
   "start_url": "/",

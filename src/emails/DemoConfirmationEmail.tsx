@@ -25,12 +25,12 @@ export default function DemoConfirmationEmail({
 }: DemoConfirmationEmailProps) {
   const logoUrl =
     process.env.NEXT_PUBLIC_LOGO_URL ||
-    "https://totalpaie.com/images/logo/logo-black.png";
+    "https://totalfisc.com/images/logo/logo-black.png";
 
   return (
     <Html>
       <Head />
-      <Preview>Votre demande de démo TotalPaie</Preview>
+      <Preview>Votre demande de démo TOTALFisc</Preview>
       <Body
         style={{
           backgroundColor: "#f4f4f5",
@@ -48,8 +48,8 @@ export default function DemoConfirmationEmail({
         >
           {/* Logo */}
           <Section style={{ marginBottom: "24px", textAlign: "center" }}>
-            <Link href={"https://totalpaie.com"}>
-              <Img src={logoUrl} alt="TotalPaie" width="155" height="30" />
+            <Link href={"https://totalfisc.com"}>
+              <Img src={logoUrl} alt="TOTALFisc" width="155" height="30" />
             </Link>
           </Section>
 
@@ -59,7 +59,7 @@ export default function DemoConfirmationEmail({
           <Section>
             <Text style={{ fontSize: "14px", color: "#4b5563" }}>
               Nous avons bien enregistré votre demande de démonstration de
-              TotalPaie{company ? ` pour ${company}` : ""}.
+              TOTALFisc{company ? ` pour ${company}` : ""}.
             </Text>
             {date && (
               <Text style={{ fontSize: "14px", color: "#4b5563" }}>
@@ -74,8 +74,7 @@ export default function DemoConfirmationEmail({
           <Text
             style={{ fontSize: "12px", color: "#9ca3af", marginTop: "24px" }}
           >
-            TotalPaie – Centralisez la paie, le pointage et les dossiers RH de
-            vos équipes.
+            TOTALFisc – Solution de comptabilité, facturation et fiscalité conforme SCF.
           </Text>
         </Container>
       </Body>

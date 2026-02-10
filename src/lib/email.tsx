@@ -7,8 +7,8 @@ import DemoConfirmationEmail from "@/emails/DemoConfirmationEmail";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-const FROM = process.env.EMAIL_FROM || "TotalPaie <no-reply@totalpaie.com>";
-const ADMIN = process.env.EMAIL_TO_ADMIN || "contact@totalpaie.com";
+const FROM = process.env.EMAIL_FROM || "TOTALFisc <no-reply@totalfisc.com>";
+const ADMIN = process.env.EMAIL_TO_ADMIN || "contact@totalfisc.com";
 
 export async function sendContactEmails(params: {
   fullName: string;
@@ -27,7 +27,7 @@ export async function sendContactEmails(params: {
   await resend.emails.send({
     from: FROM,
     to: email,
-    subject: "Votre message a bien été reçu – TotalPaie",
+    subject: "Votre message a bien été reçu – TOTALFisc",
     html: emailHtml,
   });
 
@@ -35,7 +35,7 @@ export async function sendContactEmails(params: {
   await resend.emails.send({
     from: FROM,
     to: ADMIN,
-    subject: "Nouveau message de contact – TotalPaie",
+    subject: "Nouveau message de contact – TOTALFisc",
     text: `
 Nouveau message de contact :
 
@@ -69,7 +69,7 @@ export async function sendDemoEmails(params: {
   await resend.emails.send({
     from: FROM,
     to: email,
-    subject: "Votre demande de démo – TotalPaie",
+    subject: "Votre demande de démo – TOTALFisc",
     html: emailHtml,
   });
 
@@ -77,7 +77,7 @@ export async function sendDemoEmails(params: {
   await resend.emails.send({
     from: FROM,
     to: ADMIN,
-    subject: "Nouvelle demande de démo – TotalPaie",
+    subject: "Nouvelle demande de démo – TOTALFisc",
     text: `
 Nouvelle demande de démo :
 

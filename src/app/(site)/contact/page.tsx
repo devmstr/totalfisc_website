@@ -3,9 +3,9 @@ import Contact from "@/components/Contact";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact | TotalPaie – Solution de paie et RH",
+  title: "Contact | TOTALFisc – Solution de comptabilité et fiscalité",
   description:
-    "Contactez l’équipe TotalPaie pour une démo, des informations sur les tarifs ou des questions techniques concernant la paie, le pointage et la gestion RH.",
+    "Contactez l’équipe TOTALFisc pour une démo, des informations sur les tarifs ou des questions sur la conformité SCF en Algérie.",
 };
 
 const ContactPage = () => {

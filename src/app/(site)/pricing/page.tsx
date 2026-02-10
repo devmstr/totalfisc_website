@@ -4,9 +4,9 @@ import Pricing from "@/components/Pricing";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Tarifs | TotalPaie – Solution de paie et RH",
+  title: "Tarifs | TOTALFisc – Solution de comptabilité et fiscalité",
   description:
-    "Découvrez les différents packs TotalPaie pour gérer la paie, le pointage et les dossiers RH de vos équipes, quelle que soit la taille de votre entreprise.",
+    "Découvrez les forfaits TOTALFisc adaptés aux cabinets comptables et aux entreprises algériennes pour la comptabilité SCF, la facturation et la fiscalité.",
 };
 
 const PricingPage = () => {

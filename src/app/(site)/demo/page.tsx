@@ -58,10 +58,9 @@ export default function DemoPage() {
     <section className="container mx-auto px-4 py-16">
       <Breadcrumb pageName="Demander une démo" />
 
-      <h1 className="mb-2 mt-16 text-3xl font-bold">Demander une démo</h1>
+      <h1 className="mb-2 mt-16 text-3xl font-bold">Demander une démo de TOTALFisc</h1>
       <p className="mb-8 text-body-color">
-        Laissez vos coordonnées et un membre de l’équipe vous contactera pour
-        planifier une démonstration de TotalPaie.
+        Laissez vos coordonnées et un expert TOTALFisc vous contactera pour une démonstration personnalisée de la plateforme.
       </p>
 
       <form

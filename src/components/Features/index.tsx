@@ -11,8 +11,8 @@ const Features = () => {
       <div className="container">
         <SectionTitle
           subtitle="Fonctionnalités"
-          title="Les piliers de TotalPaie"
-          paragraph="TotalPaie centralise la paie, le pointage, les dossiers RH et la conformité dans une seule plateforme SaaS, pensée pour les entreprises industrielles, de services et les groupes multi‑sites."
+          title="Les 4 piliers de TOTALFisc"
+          paragraph="TOTALFisc centralise la comptabilité SCF, la facturation, les déclarations fiscales algériennes (G50, TVA, Liasse Fiscale) et la paie/RH dans une seule plateforme cloud, conçue pour les cabinets comptables et les entreprises en Algérie."
         />
 
         <div className="-mx-4 mt-12 flex flex-wrap lg:mt-20">

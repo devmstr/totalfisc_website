@@ -16,15 +16,15 @@ const Hero = () => {
               data-wow-delay=".2s"
             >
               <h1 className="mb-6 text-3xl font-bold leading-snug text-white sm:text-4xl sm:leading-snug lg:text-5xl lg:leading-[1.2]">
-                Gérez la paie, le pointage et les dossiers RH sur une seule
-                plateforme
+                Comptabilité SCF et fiscalité algérienne automatisée sur une
+                seule plateforme
               </h1>
 
-              <p className="mx-auto mb-9 max-w-[600px] text-base font-medium text-white/90 sm:text-lg sm:leading-[1.7]">
-                TotalPaie est une plateforme SaaS professionnelle conçue pour
-                les entreprises algériennes et internationales : paie
-                automatisée, pointage sécurisé, documents RH centralisés et
-                conformité sociale, le tout dans un seul outil.
+              <p className="mx-auto mb-9 max-w-[700px] text-base font-medium text-white/90 sm:text-lg sm:leading-[1.7]">
+                TOTALFisc est la solution SaaS de référence pour les cabinets
+                comptables et PME algériennes : comptabilité conforme SCF,
+                facturation avec Timbre Fiscal, déclarations G50 et TVA
+                automatisées, avec modules RH & paie intégrés.
               </p>
 
               <ul className="mb-10 flex flex-wrap items-center justify-center gap-5">
@@ -42,7 +42,7 @@ const Hero = () => {
                     href="#features"
                     className="flex items-center gap-3 rounded-md border border-white/30 px-6 py-[14px] text-base font-medium text-white transition duration-300 ease-in-out hover:bg-white hover:text-dark"
                   >
-                    <span>Voir les fonctionnalités</span>
+                    <span>Découvrir les modules</span>
                     <svg
                       className="h-5 w-5"
                       viewBox="0 0 24 24"
@@ -68,20 +68,15 @@ const Hero = () => {
                 </li>
               </ul>
 
-              <p className="mb-4 text-center text-base font-medium text-white/60">
-                Pensé pour les usines, services et groupes multi-sites en
-                Algérie.
-              </p>
-
               <div
                 className="wow fadeInUp flex flex-wrap items-center justify-center gap-4 text-center text-sm text-white/60"
                 data-wow-delay=".3s"
               >
-                <span>Gestion de la paie</span>
+                <span>Comptabilité conforme SCF</span>
                 <span className="h-1 w-1 rounded-full bg-white/40" />
-                <span>Pointage & dispositifs biométriques</span>
+                <span>Déclarations fiscales automatisées (G50, TVA)</span>
                 <span className="h-1 w-1 rounded-full bg-white/40" />
-                <span>Documents et conformité RH</span>
+                <span>Facturation intelligente avec OCR</span>
               </div>
             </div>
           </div>
@@ -94,8 +89,8 @@ const Hero = () => {
             >
               <div>
                 <Image
-                  src="/images/hero/totalpaie-dashboard.png"
-                  alt="TotalPaie – tableau de bord paie et pointage"
+                  src="/images/hero/totalfisc-dashboard.png"
+                  alt="TOTALFisc – tableau de bord comptabilité et fiscalité"
                   className="mx-auto -mb-1 max-w-full rounded-t-xl rounded-tr-xl"
                   width={1600}
                   height={1200}

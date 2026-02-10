@@ -9,16 +9,10 @@ const CallToAction = () => {
             <div className="w-full px-4">
               <div className="mx-auto max-w-[570px] text-center">
                 <h2 className="mb-2.5 text-3xl font-bold text-white md:text-[38px] md:leading-[1.44]">
-                  <span>Prêt à structurer votre paie ?</span>
-                  <span className="text-3xl font-normal md:text-[40px]">
-                    {" "}
-                    Essayez TotalPaie maintenant{" "}
-                  </span>
+                  <span>Prêt à automatiser votre comptabilité et vos déclarations fiscales ?</span>
                 </h2>
                 <p className="mx-auto mb-6 max-w-[515px] text-base leading-[1.5] text-white">
-                  Centralisez la paie, le pointage et les dossiers RH pour
-                  toutes vos équipes, sites et filiales dans une seule
-                  plateforme sécurisée, conçue pour les entreprises algériennes.
+                  Rejoignez les cabinets comptables et PME algériennes qui font confiance à TOTALFisc pour leur comptabilité SCF, facturation et conformité DGI.
                 </p>
                 <Link
                   href="/demo"

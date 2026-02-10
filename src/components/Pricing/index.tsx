@@ -13,8 +13,8 @@ const Pricing = () => {
         <div className="mb-[60px]">
           <SectionTitle
             subtitle="Formules & abonnements"
-            title="Choisissez le plan adapté à votre entreprise"
-            paragraph="TotalPaie propose plusieurs formules en fonction du nombre d’employés, des modules activés (paie, pointage, dossiers RH, rapports) et de votre mode d’accompagnement. Nos équipes vous aident à définir le plan le plus adapté à votre structure."
+            title="Des forfaits adaptés à chaque structure"
+            paragraph="Que vous soyez un cabinet comptable, une PME ou un entrepreneur, TOTALFisc propose un plan adapté à la taille de votre portefeuille et à vos besoins de conformité fiscale."
             center
           />
         </div>

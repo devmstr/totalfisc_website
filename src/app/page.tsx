@@ -14,35 +14,34 @@ import { getAllPosts } from "@/utils/markdown";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title:
-    "TotalPaie – Plateforme de paie, pointage et RH pour les entreprises algériennes",
+  title: "TOTALFisc – Solution de comptabilité et fiscalité conforme SCF",
   description:
-    "TotalPaie aide les entreprises et groupes multi‑sites en Algérie à centraliser la paie, le pointage et les dossiers RH dans une seule plateforme sécurisée, pour réduire les erreurs et gagner du temps chaque mois.",
+    "TOTALFisc est la solution SaaS de référence pour les cabinets comptables et PME algériennes : comptabilité conforme SCF, facturation avec Timbre Fiscal, déclarations G50 et TVA automatisées.",
   manifest: "/manifest.webmanifest",
   openGraph: {
     type: "website",
     locale: "fr_FR",
-    url: "https://totalpaie.com",
-    siteName: "TotalPaie",
-    title: "TotalPaie – Plateforme de paie, pointage et RH",
+    url: "https://totalfisc.com",
+    siteName: "TOTALFisc",
+    title: "TOTALFisc – Solution de comptabilité et fiscalité conforme SCF",
     description:
-      "TotalPaie aide les entreprises et groupes en Algérie à centraliser la paie, le pointage et les dossiers RH dans une seule plateforme sécurisée.",
+      "TOTALFisc est la solution SaaS de référence pour les cabinets comptables et PME algériennes : comptabilité conforme SCF, facturation avec Timbre Fiscal, déclarations G50 et TVA automatisées.",
     images: [
       {
-        url: "https://totalpaie.com/images/og-image.png", // Your OG image
+        url: "https://totalfisc.com/images/og-image.png",
         width: 1200,
         height: 630,
-        alt: "TotalPaie – Plateforme de paie et RH",
+        alt: "TOTALFisc – Solution de comptabilité et fiscalité",
         type: "image/png",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "TotalPaie – Plateforme de paie, pointage et RH",
+    title: "TOTALFisc – Solution de comptabilité et fiscalité conforme SCF",
     description:
-      "TotalPaie aide les entreprises et groupes en Algérie à centraliser la paie, le pointage et les dossiers RH dans une seule plateforme sécurisée.",
-    images: ["https://totalpaie.com/images/og-image.png"],
+      "TOTALFisc est la solution SaaS de référence pour les cabinets comptables et PME algériennes : comptabilité conforme SCF, facturation avec Timbre Fiscal, déclarations G50 et TVA automatisées.",
+    images: ["https://totalfisc.com/images/og-image.png"],
   },
 };
 

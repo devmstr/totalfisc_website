@@ -21,12 +21,12 @@ export default function ContactConfirmationEmail({
 }: ContactConfirmationEmailProps) {
   const logoUrl =
     process.env.NEXT_PUBLIC_LOGO_URL ||
-    "https://totalpaie.com/images/logo/logo-black.png";
+    "https://totalfisc.com/images/logo/logo-black.png";
 
   return (
     <Html>
       <Head />
-      <Preview>Votre message a bien été reçu par TotalPaie</Preview>
+      <Preview>Votre message a bien été reçu par TOTALFisc</Preview>
       <Body
         style={{
           backgroundColor: "#f4f4f5",
@@ -44,8 +44,8 @@ export default function ContactConfirmationEmail({
         >
           {/* Logo */}
           <Section style={{ marginBottom: "24px", textAlign: "center" }}>
-            <Link href={"https://totalpaie.com"}>
-              <Img src={logoUrl} alt="TotalPaie" width="155" height="30" />
+            <Link href={"https://totalfisc.com"}>
+              <Img src={logoUrl} alt="TOTALFisc" width="155" height="30" />
             </Link>
           </Section>
 
@@ -55,7 +55,7 @@ export default function ContactConfirmationEmail({
           <Section>
             <Text style={{ fontSize: "14px", color: "#4b5563" }}>
               Nous avons bien reçu votre demande de contact. Un membre de
-              l&apos;équipe TotalPaie vous répondra dans les plus brefs délais.
+              l&apos;équipe TOTALFisc vous répondra dans les plus brefs délais.
             </Text>
             <Text style={{ fontSize: "14px", color: "#4b5563" }}>
               Si votre demande est urgente, vous pouvez également nous joindre
@@ -65,7 +65,7 @@ export default function ContactConfirmationEmail({
           <Text
             style={{ fontSize: "12px", color: "#9ca3af", marginTop: "24px" }}
           >
-            TotalPaie – Plateforme de paie, pointage et RH pour les entreprises
+            TOTALFisc – Plateforme de comptabilité, facturation et fiscalité pour les entreprises
             en Algérie.
           </Text>
         </Container>

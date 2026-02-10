@@ -15,19 +15,20 @@ const Footer = () => {
               <Link href="/" className="mb-6 inline-block max-w-[160px]">
                 <Image
                   src="/images/logo/logo-white.png"
-                  alt="TotalPaie logo"
+                  alt="TOTALFisc logo"
                   width={140}
                   height={30}
                   className="max-w-full"
                 />
               </Link>
               <p className="mb-6 max-w-[270px] text-base text-gray-7">
-                TotalPaie centralise la paie, le pointage et les dossiers RH
-                pour les entreprises et groupes multi‑sites en Algérie.
+                TOTALFisc est la solution SaaS de comptabilité et fiscalité
+                conforme SCF pour les cabinets comptables et entreprises
+                algériennes.
               </p>
               <p className="mb-2 text-sm text-gray-7">Contact</p>
               <p className="text-sm text-gray-7">
-                contact@totalpaie.com
+                contact@totalfisc.com
                 <br />
                 +213 797 87 40 30
               </p>
@@ -154,14 +155,14 @@ const Footer = () => {
             <div className="w-full px-4 md:w-2/3 lg:w-1/2">
               <div className="my-1 flex justify-center md:justify-start">
                 <p className="text-base text-gray-7">
-                  © {new Date().getFullYear()} TotalPaie. Tous droits réservés.
+                  © {new Date().getFullYear()} TOTALFisc. Tous droits réservés.
                 </p>
               </div>
             </div>
             <div className="w-full px-4 md:w-1/3 lg:w-1/2">
               <div className="my-1 flex justify-center md:justify-end">
                 <p className="text-base text-gray-7">
-                  Conçu pour les équipes RH et paie en Algérie.
+                  Conçu pour les experts-comptables et entreprises en Algérie.
                 </p>
               </div>
             </div>

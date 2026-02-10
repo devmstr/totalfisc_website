@@ -28,7 +28,7 @@ const Contact = () => {
                   CONTACT
                 </span>
                 <h2 className="max-w-[360px] text-[32px] font-semibold leading-[1.14] text-dark dark:text-white md:text-[35px]">
-                  Parlons de votre gestion de paie et RH.
+                  Parlons de votre comptabilité et fiscalité.
                 </h2>
               </div>
 
@@ -43,7 +43,7 @@ const Contact = () => {
                       Email
                     </h3>
                     <p className="text-base text-body-color dark:text-dark-6">
-                      contact@totalpaie.com
+                      contact@totalfisc.com
                     </p>
                   </div>
                 </div>
@@ -167,7 +167,7 @@ const Contact = () => {
                   <textarea
                     name="message"
                     rows={2}
-                    placeholder="Décrivez votre besoin en paie, pointage ou gestion RH"
+                    placeholder="Décrivez votre besoin en comptabilité, facturation ou conformité fiscale"
                     className="w-full resize-none border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-dark placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-white"
                   />
                   {state && !state.ok && state.fieldErrors?.message && (
@@ -189,9 +189,8 @@ const Contact = () => {
 
                 {state && (
                   <p
-                    className={`text-sm ${
-                      state.ok ? "text-green-500" : "text-red-500"
-                    }`}
+                    className={`text-sm ${state.ok ? "text-green-500" : "text-red-500"
+                      }`}
                   >
                     {state.message}
                   </p>
