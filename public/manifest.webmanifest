@@ -1,0 +1,26 @@
+{
+  "name": "TotalPaie - Plateforme de paie et RH",
+  "short_name": "TotalPaie",
+  "description": "TotalPaie aide les entreprises et groupes en Algérie à centraliser la paie, le pointage et les dossiers RH dans une seule plateforme sécurisée.",
+  "lang": "fr",
+  "dir": "ltr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#090E34",
+  "background_color": "#090E34",
+  "icons": [
+    {
+      "src": "/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
