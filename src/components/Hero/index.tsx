@@ -30,10 +30,10 @@ const Hero = () => {
               <ul className="mb-10 flex flex-wrap items-center justify-center gap-5">
                 <li>
                   <Link
-                    href="/demo"
+                    href="https://totalfisc-dashboard-9xyx.vercel.app/"
                     className="inline-flex items-center justify-center rounded-md bg-white px-7 py-[14px] text-center text-base font-medium text-dark shadow-1 transition duration-300 ease-in-out hover:bg-gray-200"
                   >
-                    Demander une démo
+                    Connexion
                   </Link>
                 </li>
 
@@ -89,7 +89,7 @@ const Hero = () => {
             >
               <div>
                 <Image
-                  src="/images/hero/totalfisc-dashboard.png"
+                  src="/images/hero/dashboard.png"
                   alt="TOTALFisc – tableau de bord comptabilité et fiscalité"
                   className="mx-auto -mb-1 max-w-full rounded-t-xl rounded-tr-xl"
                   width={1600}

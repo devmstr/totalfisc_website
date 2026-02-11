@@ -47,57 +47,35 @@ const Header = () => {
   return (
     <>
       <header
-        className={`ud-header left-0 top-0 z-40 flex h-16 w-full items-center ${
-          sticky
-            ? "shadow-nav fixed z-[999] border-b border-stroke bg-white/80 backdrop-blur-[5px] dark:border-dark-3/20 dark:bg-dark/10"
-            : "absolute bg-transparent"
-        }`}
+        className={`ud-header left-0 top-0 z-40 flex h-16 w-full items-center ${sticky
+          ? "shadow-nav fixed z-[999] border-b border-stroke bg-white/80 backdrop-blur-[5px] dark:border-dark-3/20 dark:bg-dark/10"
+          : "absolute bg-transparent"
+          }`}
       >
         <div className="container flex w-full justify-between ">
           <div className="w-fix flex max-w-full items-center gap-4">
             <Link
               href="/"
-              className={`navbar-logo flex h-full w-36 items-center `}
+              className={`navbar-logo flex h-full items-center gap-2`}
             >
-              {pathUrl !== "/" ? (
-                <>
-                  <Image
-                    src={`/images/logo/logo-black.png`}
-                    alt="logo"
-                    width={240}
-                    height={30}
-                    className="header-logo w-full dark:hidden"
-                  />
-                  <Image
-                    src={`/images/logo/logo-white.png`}
-                    alt="logo"
-                    width={240}
-                    height={30}
-                    className="header-logo hidden w-full dark:block"
-                  />
-                </>
-              ) : (
-                <>
-                  <Image
-                    src={`${
-                      sticky
-                        ? "/images/logo/logo-black.png"
-                        : "/images/logo/logo-white.png"
-                    }`}
-                    alt="logo"
-                    width={140}
-                    height={30}
-                    className="header-logo w-full dark:hidden"
-                  />
-                  <Image
-                    src={"/images/logo/logo-white.png"}
-                    alt="logo"
-                    width={140}
-                    height={30}
-                    className="header-logo hidden w-full dark:block"
-                  />
-                </>
-              )}
+              <Image
+                src="/logo-shape.svg"
+                alt="logo"
+                width={32}
+                height={32}
+                className={`header-logo ${sticky || pathUrl !== "/"
+                  ? "brightness-0 dark:brightness-100"
+                  : ""
+                  }`}
+              />
+              <span
+                className={`text-xl font-bold font-sans ${sticky || pathUrl !== "/"
+                  ? "text-dark dark:text-white"
+                  : "text-white"
+                  }`}
+              >
+                TOTALFisc
+              </span>
             </Link>
           </div>
           <div className="flex items-center justify-center  px-4 sm:w-full">
@@ -108,40 +86,33 @@ const Header = () => {
               className="absolute right-4 top-1/2 block w-16 -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden"
             >
               <span
-                className={`relative my-1.5 block h-0.5 w-[30px] transition-all duration-300 ${
-                  navbarOpen ? " top-[7px] rotate-45" : " "
-                } ${pathUrl !== "/" && "!bg-dark dark:!bg-white"} ${
-                  pathUrl === "/" && sticky
+                className={`relative my-1.5 block h-0.5 w-[30px] transition-all duration-300 ${navbarOpen ? " top-[7px] rotate-45" : " "
+                  } ${pathUrl !== "/" && "!bg-dark dark:!bg-white"} ${pathUrl === "/" && sticky
                     ? "bg-dark dark:bg-white"
                     : "bg-white"
-                }`}
+                  }`}
               />
               <span
-                className={`relative my-1.5 block h-0.5 w-[30px] transition-all duration-300 ${
-                  navbarOpen ? "opacity-0 " : " "
-                } ${pathUrl !== "/" && "!bg-dark dark:!bg-white"} ${
-                  pathUrl === "/" && sticky
+                className={`relative my-1.5 block h-0.5 w-[30px] transition-all duration-300 ${navbarOpen ? "opacity-0 " : " "
+                  } ${pathUrl !== "/" && "!bg-dark dark:!bg-white"} ${pathUrl === "/" && sticky
                     ? "bg-dark dark:bg-white"
                     : "bg-white"
-                }`}
+                  }`}
               />
               <span
-                className={`relative my-1.5 block h-0.5 w-[30px] transition-all duration-300 ${
-                  navbarOpen ? " top-[-8px] -rotate-45" : " "
-                } ${pathUrl !== "/" && "!bg-dark dark:!bg-white"} ${
-                  pathUrl === "/" && sticky
+                className={`relative my-1.5 block h-0.5 w-[30px] transition-all duration-300 ${navbarOpen ? " top-[-8px] -rotate-45" : " "
+                  } ${pathUrl !== "/" && "!bg-dark dark:!bg-white"} ${pathUrl === "/" && sticky
                     ? "bg-dark dark:bg-white"
                     : "bg-white"
-                }`}
+                  }`}
               />
             </button>
             <nav
               id="navbarCollapse"
-              className={`navbar absolute right-0 z-30 flex h-[calc(100vh-4rem)] w-[75%] max-w-[500px] flex-col gap-5 rounded border-[.5px] border-body-color/50 bg-white px-6 py-4 duration-300 dark:border-body-color/20 dark:bg-dark-2 md:h-16 md:w-full md:max-w-full lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 lg:dark:bg-transparent ${
-                navbarOpen
-                  ? "visibility top-full opacity-100"
-                  : "invisible top-[120%] opacity-0"
-              }`}
+              className={`navbar absolute right-0 z-30 flex h-[calc(100vh-4rem)] w-[75%] max-w-[500px] flex-col gap-5 rounded border-[.5px] border-body-color/50 bg-white px-6 py-4 duration-300 dark:border-body-color/20 dark:bg-dark-2 md:h-16 md:w-full md:max-w-full lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 lg:dark:bg-transparent ${navbarOpen
+                ? "visibility top-full opacity-100"
+                : "invisible top-[120%] opacity-0"
+                }`}
             >
               <ul className="flex w-full flex-col items-start justify-start gap-2 md:mt-1 md:h-full md:flex-row md:items-center md:justify-center md:gap-12">
                 {menuData.map((menuItem, index) =>
@@ -162,15 +133,13 @@ const Header = () => {
                         <Link
                           scroll={false}
                           href={menuItem.path}
-                          className={`ud-menu-scroll flex py-1 text-base lg:inline-flex lg:px-0  ${
-                            sticky
-                              ? "text-dark group-hover:text-primary dark:text-white dark:group-hover:text-primary"
-                              : "text-body-color dark:text-white lg:text-white"
-                          } ${
-                            pathUrl === menuItem?.path &&
+                          className={`ud-menu-scroll flex py-1 text-base lg:inline-flex lg:px-0  ${sticky
+                            ? "text-dark group-hover:text-primary dark:text-white dark:group-hover:text-primary"
+                            : "text-body-color dark:text-white lg:text-white"
+                            } ${pathUrl === menuItem?.path &&
                             sticky &&
                             "!text-primary"
-                          }`}
+                            }`}
                         >
                           {menuItem.title}
                         </Link>
@@ -204,11 +173,10 @@ const Header = () => {
                       ) : (
                         <button
                           onClick={() => handleSubmenu(index)}
-                          className={`ud-menu-scroll flex items-center justify-between py-2 text-base lg:inline-flex lg:px-0 lg:py-6 ${
-                            sticky
-                              ? "text-dark group-hover:text-primary dark:text-white dark:group-hover:text-primary"
-                              : "text-white"
-                          }`}
+                          className={`ud-menu-scroll flex items-center justify-between py-2 text-base lg:inline-flex lg:px-0 lg:py-6 ${sticky
+                            ? "text-dark group-hover:text-primary dark:text-white dark:group-hover:text-primary"
+                            : "text-white"
+                            }`}
                         >
                           {menuItem.title}
 
@@ -231,19 +199,17 @@ const Header = () => {
                       )}
 
                       <div
-                        className={`submenu relative left-0 top-full w-[250px] rounded-sm bg-white p-4 transition-[top] duration-300 group-hover:opacity-100 dark:bg-dark-2 lg:invisible lg:absolute lg:top-[110%] lg:block lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full ${
-                          openIndex === index ? "!-left-[25px]" : "hidden"
-                        }`}
+                        className={`submenu relative left-0 top-full w-[250px] rounded-sm bg-white p-4 transition-[top] duration-300 group-hover:opacity-100 dark:bg-dark-2 lg:invisible lg:absolute lg:top-[110%] lg:block lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full ${openIndex === index ? "!-left-[25px]" : "hidden"
+                          }`}
                       >
                         {menuItem?.submenu?.map((submenuItem: any, i) => (
                           <Link
                             href={submenuItem.path}
                             key={i}
-                            className={`block rounded px-4 py-[10px] text-sm ${
-                              pathUrl === submenuItem.path
-                                ? "text-primary"
-                                : "text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary"
-                            }`}
+                            className={`block rounded px-4 py-[10px] text-sm ${pathUrl === submenuItem.path
+                              ? "text-primary"
+                              : "text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary"
+                              }`}
                           >
                             {submenuItem.title}
                           </Link>
@@ -255,10 +221,10 @@ const Header = () => {
               </ul>
               <div className="flex items-center gap-5 md:hidden">
                 <Link
-                  href="/demo"
+                  href="https://totalfisc-dashboard-9xyx.vercel.app/"
                   className={`text-nowrap rounded-lg bg-primary px-6 py-3 text-base font-medium text-white duration-300 ease-in-out hover:bg-primary/90`}
                 >
-                  Demander une démo
+                  Connexion
                 </Link>
               </div>
             </nav>
@@ -269,14 +235,13 @@ const Header = () => {
 
           <div className="hidden items-center gap-5 md:flex">
             <Link
-              href="/demo"
-              className={`text-nowrap rounded-lg px-6 py-3 text-base font-medium duration-300 ease-in-out ${
-                sticky || pathUrl !== "/"
-                  ? "bg-primary text-white hover:bg-primary/90 dark:bg-white/10 dark:hover:bg-white/20"
-                  : "bg-white text-primary hover:bg-gray-100"
-              }`}
+              href="https://totalfisc-dashboard-9xyx.vercel.app/"
+              className={`text-nowrap rounded-lg px-6 py-3 text-base font-medium duration-300 ease-in-out ${sticky || pathUrl !== "/"
+                ? "bg-primary text-white hover:bg-primary/90 dark:bg-white/10 dark:hover:bg-white/20"
+                : "bg-white text-primary hover:bg-gray-100"
+                }`}
             >
-              Demander une démo
+              Connexion
             </Link>
           </div>
         </div>

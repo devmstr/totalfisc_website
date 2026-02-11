@@ -55,21 +55,17 @@ const ForgotPassword = () => {
               data-wow-delay=".15s"
             >
               <div className="mb-10 text-center">
-                <Link href="/" className="mx-auto inline-block max-w-[160px]">
+                <Link href="/" className="mx-auto flex items-center justify-center gap-2">
                   <Image
-                    src="/images/logo/logo-black.png"
+                    src="/logo-shape.svg"
                     alt="logo"
-                    width={140}
-                    height={30}
-                    className="dark:hidden"
+                    width={32}
+                    height={32}
+                    className="brightness-0 dark:brightness-100"
                   />
-                  <Image
-                    src="/images/logo/logo-white.png"
-                    alt="logo"
-                    width={140}
-                    height={30}
-                    className="hidden dark:block"
-                  />
+                  <span className="text-xl font-bold text-primary dark:text-white font-sans">
+                    TOTALFisc
+                  </span>
                 </Link>
               </div>
 

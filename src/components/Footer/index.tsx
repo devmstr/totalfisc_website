@@ -4,7 +4,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <footer
-      className="wow fadeInUp relative z-10 bg-[#090E34] pt-20 lg:pt-[100px]"
+      className="wow fadeInUp relative z-10 bg-[#00403f] pt-20 lg:pt-[100px]"
       data-wow-delay=".15s"
     >
       <div className="container">
@@ -12,14 +12,17 @@ const Footer = () => {
           {/* Brand + intro */}
           <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-4/12 xl:w-3/12">
             <div className="mb-10 w-full">
-              <Link href="/" className="mb-6 inline-block max-w-[160px]">
+              <Link href="/" className="mb-6 flex items-center gap-2">
                 <Image
-                  src="/images/logo/logo-white.png"
-                  alt="TOTALFisc logo"
-                  width={140}
-                  height={30}
+                  src="/logo-shape.svg"
+                  alt="logo"
+                  width={40}
+                  height={40}
                   className="max-w-full"
                 />
+                <span className="text-2xl font-bold text-white font-sans">
+                  TOTALFisc
+                </span>
               </Link>
               <p className="mb-6 max-w-[270px] text-base text-gray-7">
                 TOTALFisc est la solution SaaS de comptabilité et fiscalité
@@ -87,10 +90,10 @@ const Footer = () => {
               <ul>
                 <li>
                   <Link
-                    href="/demo"
+                    href="https://totalfisc-dashboard-9xyx.vercel.app/"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
                   >
-                    Demander une démo
+                    Connexion
                   </Link>
                 </li>
                 <li>

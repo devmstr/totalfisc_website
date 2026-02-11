@@ -10,7 +10,7 @@ const PricingBox = ({ product }: { product: Price }) => {
   const handleSubscription = async (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
 
-    router.push("/demo");
+    window.location.href = "https://totalfisc-dashboard-9xyx.vercel.app/";
   };
 
   return (
@@ -45,7 +45,7 @@ const PricingBox = ({ product }: { product: Price }) => {
             onClick={handleSubscription}
             className="inline-block w-full rounded-md bg-primary px-7 py-3 text-center text-base font-medium text-white transition duration-300 hover:bg-primary/90"
           >
-            Demander ce pack
+            S&apos;inscrire
           </button>
         </div>
       </div>

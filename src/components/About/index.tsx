@@ -13,7 +13,7 @@ const About = () => {
             <div className="w-full px-4 lg:w-1/2">
               <div className="mb-12 max-w-[540px] lg:mb-0">
                 <h2 className="mb-5 text-3xl font-bold leading-tight text-dark dark:text-white sm:text-[40px] sm:leading-[1.2]">
-                  Une solution comptable pensée pour l'Algérie
+                  Une solution comptable pensée pour l&apos;Algérie
                 </h2>
                 <p className="mb-8 text-base leading-relaxed text-body-color dark:text-dark-6">
                   TOTALFisc est une plateforme comptable moderne conçue
@@ -49,10 +49,10 @@ const About = () => {
                 </div>
 
                 <Link
-                  href="/demo"
+                  href="https://totalfisc-dashboard-9xyx.vercel.app/"
                   className="inline-flex items-center justify-center rounded-md bg-primary px-7 py-3 text-center text-base font-medium text-white duration-300 hover:bg-primary/90"
                 >
-                  Découvrir TOTALFisc
+                  Connexion
                 </Link>
               </div>
             </div>
@@ -75,15 +75,15 @@ const About = () => {
                 </div>
 
                 <div className="hidden w-full px-2 sm:block sm:w-1/2 sm:px-4 lg:px-2 xl:px-4">
-                  <div className="relative mb-4 h-full w-full overflow-hidden sm:mb-8 sm:h-[220px] md:h-[346px] lg:mb-4 lg:h-[225px] xl:mb-8 xl:h-[310px]">
-                    <Image
-                      src="/images/about/sidebar-attendance.png"
-                      alt="TOTALFisc – gestion de la facturation et TVA"
-                      width={1368}
-                      height={1420}
-                      className="absolute left-1/2 top-[67%] h-[250%] w-full -translate-x-1/2 -translate-y-1/2"
-                      priority
-                    />
+                  <div className="relative mb-4 flex h-full w-full items-center overflow-hidden bg-gray-1 py-8 px-2 sm:mb-8 sm:h-[220px] md:h-[346px] lg:mb-4 lg:h-[225px] xl:mb-8 xl:h-[310px]">
+                    <div className="relative z-10">
+                      <h3 className="mb-3 text-2xl font-bold text-primary">
+                        Simplicité & Sécurité
+                      </h3>
+                      <p className="text-base font-medium text-body-color">
+                        La solution cloud qui modernise la gestion comptable en Algérie.
+                      </p>
+                    </div>
                   </div>
 
                   <div className="relative z-10 mb-4 flex items-center justify-center overflow-hidden bg-primary px-6 py-12 sm:mb-8 sm:h-[160px] sm:p-5 lg:mb-4 xl:mb-8">

@@ -15,10 +15,10 @@ const CallToAction = () => {
                   Rejoignez les cabinets comptables et PME algériennes qui font confiance à TOTALFisc pour leur comptabilité SCF, facturation et conformité DGI.
                 </p>
                 <Link
-                  href="/demo"
+                  href="https://totalfisc-dashboard-9xyx.vercel.app/"
                   className="inline-block rounded-md border border-transparent bg-white px-7 py-3 text-base font-medium text-primary transition hover:bg-gray-100"
                 >
-                  Demander une démo
+                  Connexion
                 </Link>
               </div>
             </div>
