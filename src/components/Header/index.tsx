@@ -59,18 +59,18 @@ const Header = () => {
               className={`navbar-logo flex h-full items-center gap-2`}
             >
               <Image
-                src="/logo-shape.svg"
+                src={sticky || pathUrl !== "/" ? "/logo-shape-green.svg" : "/logo-shape.svg"}
                 alt="logo"
                 width={32}
                 height={32}
                 className={`header-logo ${sticky || pathUrl !== "/"
-                  ? "brightness-0 dark:brightness-100"
+                  ? "dark:brightness-0 dark:invert"
                   : ""
                   }`}
               />
               <span
                 className={`text-xl font-bold font-sans ${sticky || pathUrl !== "/"
-                  ? "text-dark dark:text-white"
+                  ? "text-primary dark:text-white"
                   : "text-white"
                   }`}
               >

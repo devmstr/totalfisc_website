@@ -4,6 +4,12 @@ import ScrollToTop from "@/components/ScrollToTop";
 import "../styles/index.css";
 import "../styles/prism-vsc-dark-plus.css";
 import Providers from "./providers";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "TOTALFisc - Solution SaaS de comptabilité et fiscalité en Algérie",
+  description: "Solution complète de comptabilité conforme SCF, facturation et déclarations fiscales automatisées pour les entreprises algériennes.",
+};
 
 export default function RootLayout({
   children,
